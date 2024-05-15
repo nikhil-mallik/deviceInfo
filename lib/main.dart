@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import 'constants/appRoutes.constant.dart';
-import 'deviceInfo/UI/deviceInfoUI.dart';
 import 'pageNotFound.dart';
 
 void main() {
@@ -21,7 +20,7 @@ class MyApp extends StatelessWidget {
       defaultTransition: Transition.noTransition,
       themeMode: ThemeMode.dark,
       unknownRoute:
-      GetPage(name: '/notFound', page: () => const PageNotFound()),
+          GetPage(name: '/notFound', page: () => const PageNotFound()),
       getPages: AppRoutes.routes,
       // home: DeviceInfoUI(),
     );
